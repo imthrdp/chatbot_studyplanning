@@ -1,0 +1,374 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - good evening
+    - good morning
+    - good afternoon
+    - chào
+    - chào cậu
+    - chào bạn
+    - chào buổi sáng
+    - chào buổi tối
+    - ê
+    - xin chào
+    - hello there
+    - hi
+    - chào bạn giúp mình với
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - em ơi
+    - cậu ơi
+    - có ai ở đây không?
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - see you
+    - good night
+    - bye
+    - goodbye
+    - bye bye
+    - see you later
+    - tạm biệt
+    - hẹn gặp lại
+    - tạm biệt nhé
+    - chào tạm biệt
+    - chào tạm biệt em
+    - chào tạm biệt bạn
+    - chào tạm biệt cậu
+    - tạm biệt em
+    - tạm biệt em nhé
+    - tạm biệt cậu nhé
+    - tạm biệt bạn nhé
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - tất nhiên rồi
+    - nghe hay đấy
+    - đúng rồi
+    - ok
+    - oke
+    - okie
+    - okay
+    - có
+    - đồng ý
+    - được
+    - được thôi
+    - được đó
+
+- intent: deny
+  examples: |
+    - tôi không nghĩ như vậy
+    - không đời nào
+    - không
+    - không nhé
+    - không được
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - chuẩn
+    - chuẩn rồi
+    - hay
+    - siêu
+    - tuyệt
+    - tốt
+    - tốt lắm
+    - giỏi
+    - giỏi thật
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - buồn lắm
+    - buồn quá
+    - chán thật
+    - tôi cảm thấy không ổn
+    - không vui
+
+- intent: thanks_bot
+  examples: |
+    - Cảm ơn
+    - Cảm ơn bot
+    - Cảm ơn bạn nhé
+    - Thanks
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - cậu là ai
+    - bạn là ai
+    - cậu có phải là người không
+    - cậu là máy tính phải không
+    - cậu có phải là người máy không
+    - cậu là người máy đúng không
+    - cậu là người hay là người máy
+
+- intent: ask_ability
+  examples: |
+    - bạn có thể làm những việc gì?
+    - bạn có những chức năng gì?
+    - bạn có thể hỗ trợ gì cho tôi?
+    - bạn giúp mình được gì?
+    - cho tôi xem các chức năng của bạn
+    - bạn có thể làm được những gì?
+    - chức năng của bạn là gì?
+    - cho mình biết bạn làm được gì nhé?
+    - bạn có ích trong những việc gì?
+    - lĩnh vực gì bạn giỏi nhất?
+    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+    - bạn có thể làm gì
+    - giúp mình với
+    - cho mình hỏi tí
+
+- intent: praise
+  examples: |
+    - bot giỏi quá
+    - tuyệt vời
+    - bot làm tốt lắm
+    - bot thông minh thật
+    - cậu giỏi đấy
+    - bạn giỏi đấy
+    - cậu rất giỏi
+    - bạn rất giỏi
+    - cậu rất thông minh
+    - bạn rất thông minh
+    - hay
+    - êm
+    - nice
+
+- intent: ask_dinh_nghia_ke_hoach_hoc_tap
+  examples: |
+    - Kế hoạch học tập là gì?
+    - Kế hoạch học tập là sao?
+    - Thế nào là kế hoạch học tập?
+    - Kế hoạch học tập
+    - Định nghĩa kế hoạch học tập
+    - Khái niệm kế hoạch học tập
+
+- intent: ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  examples: |
+    - Mục đích của việc lập kế hoạch học tập là gì?
+    - Tại sao cần lập kế hoạch học tập?
+    - Vì sao nên lập kế hoạch học tập?
+    - Tại sao cần lập kế hoạch học tập?
+
+- intent: ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  examples: |
+    - Quy trình quản lý kế hoạch học tập
+    - Quy trình quản lý kế hoạch học tập diễn ra như thế nào
+    - Thông tin về quy trình quản lý kế hoạch học tập
+
+- intent: ask_cap_nhat_hoc_phan_tich_luy
+  examples: |
+    - Cập nhật học phần tích lũy
+    - Cập nhật học phần tích lũy là gì
+
+- intent: ask_cap_nhat_hoc_phan_phai_hoc
+  examples: |
+    - Cập nhật học phần phải học
+    - Cập nhật học phần phải học là gì?
+    - Cách cập nhật học phần phải học.
+
+- intent: ask_cap_nhat_nam_hoc_hoc_ky
+  examples: |
+    - Cập nhật năm học - học kỳ
+    - Cập nhật năm học - học kỳ là gì?
+    - Cập nhật năm học, học kỳ
+    - Cập nhật năm học, học kỳ là gì?
+
+- intent: ask_xem_KHTT_toan_khoa
+  examples: |
+    - Cho mình xem kế hoạch học tập toàn khóa
+    - Kế hoạch học tập toàn khóa
+    - Kế hoạch học tập toàn khóa ngành công nghệ thông tin
+    - Kế hoạch học tập toàn khóa có những môn gì?
+
+- intent: ask_hoc_phan_tien_quyet
+  examples: |
+    - Định nghĩa học phần tiên quyết là gì?
+    - Định nghĩa học phần tiên quyết
+    - Khái niệm học phần tiên quyết là gì?
+    - Khái niệm học phần tiên quyết
+    - Định nghĩa tiên quyết
+    - Khái niệm tiên quyết
+
+- intent: ask_hoc_phan_song_hanh
+  examples: |
+    - Định nghĩa học phần song hành là gì?
+    - Định nghĩa học phần song hành
+    - Khái niệm học phần song hành là gì?
+    - Khái niệm học phần song hành
+    - Định nghĩa song hành
+    - Khái niệm song hành
+
+- intent: ask_hoc_phan_bat_buoc
+  examples: |
+    - Học phần bắt buộc là gì?
+    - Học phần bắt buộc
+    - Định nghĩa học phần bắt buộc là gì?
+    - Định nghĩa học phần bắt buộc
+    - Khái niệm học phần bắt buộc là gì?
+    - Khái niệm học phần bắt buộc
+
+- intent: ask_hoc_phan_tu_chon
+  examples: |
+    - Học phần tự chọn là gì?
+    - Học phần tự chọn
+    - Định nghĩa học phần tự chọn là gì?
+    - Định nghĩa học phần tự chọn
+    - Khái niệm học phần tự chọn là gì?
+    - Khái niệm học phần tự chọn
+
+- intent: ask_chuong_trinh_dao_tao
+  examples: |
+    - Chương trình đào tạo là gì?
+    - Định nghĩa Chương trình đào tạo
+    - Khái niệm chương trình đào tạo
+    - Chương trình đào tạo là sao?
+
+- intent: ask_tin_chi
+  examples: |
+    - Tín chỉ
+    - Tín chỉ là gì?
+    - Tín chỉ là sao?
+
+- intent: ask_tich_luy
+  examples: |
+    - Tích lũy là gì?
+    - Tích lũy
+    - Tích lũy là sao?
+
+- intent: ask_lap_ke_hoach_hoc_tap_o_dau
+  examples: |
+    - Tôi có thể lập kế hoạch ở đâu?
+    - Lập kế hoạch ở đâu?
+    - Mình muốn biết kế hoạch học tập được lập ở đâu?
+    - Tôi muốn biết phải lập kế hoạch học tập ở đâu?
+
+- intent: ask_dang_ky_hoc_phan
+  examples: |
+    - Đăng ký học phần
+    - Đăng ký học phần là gì
+
+- intent: ask_tai_sao_phai_dang_ky_hoc_phan
+  examples: |
+    - Tại sao phải đăng ký học phần?
+    - Tại sao nên đăng ký học phần?
+
+- intent: ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  examples: |
+    - Làm thế nào để cập nhật kế hoạch học tập?
+    - Tôi phải cập nhật kế hoạch học tập như thế nào?
+    - Cập nhật kế hoạch học tập như thế nào?
+    - Cách thức cập nhật kế hoạch học tập
+    - Các bước cập nhật kế hoạch học tập
+    - Quy trình cập nhật kế hoạch học tập
+
+- intent: ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+  examples: |
+    - Học phần ngoài chương trình đào tạo
+    - Học phần ngoài chương trình đào tạo là gì?
+
+- intent: ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  examples: |
+    - Cách thêm học phần ngoài chương trình đào tạo
+    - Thêm học phần ngoài chương trình đào tạo như thế nào
+    - Chọn học phần ngoài chương trình đào tạo như thế nào
+
+- intent: ask_hoc_phan_cai_thien_la_gi
+  examples: |
+    - Học phần cải thiện?
+    - Học phần cải thiện là gì?
+    - Khái niệm học phần cải thiện
+    - Định nghĩa học phần cải thiện
+
+- intent: ask_them_hoc_phan_cai_thien_nhu_the_nao
+  examples: |
+    - Cách thêm học phần cải thiện
+    - Thêm học phần cải thiện như thế nào
+    - Chọn học phần cải thiện như thế nào
+
+- intent: ask_hoc_phan_tien_quyet_B_cua_mon_A
+  examples: |
+    - Học phần tiên quyết của [CT175](modulesCode)
+    - Học phần tiên quyết của môn [CT175]{"entity":"modulesCode","value":"CT175"}
+    - Học phần tiên quyết của môn [TN010]{"entity":"modulesCode","value":"TN010"}
+    - Học phần tiên quyết của học phần [CT180]{"entity":"modulesCode","value":"CT180"}
+    - Học phần tiên quyết của [CT175](modulesCode) là gì
+    - Học phần tiên quyết [CT271](modulesCode) là gì
+    - Học phần tiên quyết [CT175](modulesCode) là gì
+    - Học phần tiên quyết môn [CT251](modulesCode) là gì
+
+- intent: ask_hoc_phan_A_co_bat_buoc_khong
+  examples: |
+    - [CT175](modulesCode) có bắt buộc không
+    - [CT332]{"entity":"modulesCode","value":"CT332"} bắt buộc hay tự chọn
+    - [CT428]{"entity":"modulesCode","value":"CT428"} tự chọn hay bắt buộc
+    - [TN001](modulesCode) là bắt buộc hay tự chọn
+    - [KL001]{"entity":"modulesCode","value":"KL001"} tự chọn hay là bắt buộc
+    - [ML001]{"entity":"modulesCode","value":"ML001"} có bắt buộc không
+
+- intent: ask_ten_hoc_phan
+  examples: |
+    - Tên học phần [CT175](modulesCode) là học phần gì
+    - Tên của học phần [CT332]{"entity":"modulesCode","value":"CT332"} là gì
+    - Tên của học phần [CT428]{"entity":"modulesCode","value":"CT428"} là gì
+    - Tên học phần [TN001](modulesCode) là học phần gì
+    - Tên học phần [KL001]{"entity":"modulesCode","value":"KL001"} là gì
+    - Tên học phần [ML001]{"entity":"modulesCode","value":"ML001"} là gì
+    - Học phần [TC001]{"entity":"modulesCode","value":"TC001"}  tên là gì
+
+- intent: ask_ma_hoc_phan
+  examples: |
+    - Mã học phần [Nguyên lý hệ điều hành](modulesName) là gì
+    - Mã của học phần [Kiến trúc máy tính]{"entity":"modulesName","value":"Kiến trúc máy tính"} là gì
+    - Mã của học phần [Nền tảng công nghệ thông tin]{"entity":"modulesName","value":"Nền tảng công nghệ thông tin"} là gì
+    - Mã học phần [Lập trình căn bản A](modulesName) là gì
+    - Mã học phần [Nhập môn công nghệ phần mềm]{"entity":"modulesName","value":"Nhập môn công nghệ phần mềm"} là gì
+    - Mã học phần [Thực tập thực tế - CNTT]{"entity":"modulesName","value":"Thực tập thực tế - CNTT"} là gì
+    - Mã học phần [Luận văn tốt nghiệp – CNTT]{"entity":"modulesName","value":"Luận văn tốt nghiệp – CNTT"} là gì
+    - Mã học phần [Tiểu luận – CNTT]{"entity":"modulesName","value":"Tiểu luận – CNTT"} là gì
+    - Mã học phần [Thương mại điện tử - CNTT]{"entity":"modulesName","value":"Thương mại điện tử - CNTT"} là gì
+    - Mã học phần [Anh văn chuyên môn CNTT-1]{"entity":"modulesName","value":"Anh văn chuyên môn CNTT-1"} là gì
+    - Mã học phần [Anh văn chuyên môn CNTT-2]{"entity":"modulesName","value":"Anh văn chuyên môn CNTT-2"} là gì
+    - Mã học phần [Niên luận cơ sở - CNTT]{"entity":"modulesName","value":"Niên luận cơ sở - CNTT"} là gì
+    - Mã học phần [Niên luận - CNTT]{"entity":"modulesName","value":"Niên luận - CNTT"} là gì
+    - Mã học phần [Cơ sở dữ liệu]{"entity":"modulesName","value":"Cơ sở dữ liệu"} là gì
+    - Học phần [An toàn hệ thống]{"entity":"modulesName","value":"An toàn hệ thống"} có mã là gì

@@ -1,0 +1,133 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Reply utter_thanks_bot anytime the user thanks
+  steps:
+  - intent: thanks_bot
+  - action: utter_thanks_bot
+
+- rule: Reply action_modules_prerequisite anytime the user ask_hoc_phan_tien_quyet_B_cua_mon_A
+  steps:
+  - intent: ask_hoc_phan_tien_quyet_B_cua_mon_A
+  - action: action_modules_prerequisite
+
+- rule: Reply action_modules_type anytime the user ask_hoc_phan_A_co_bat_buoc_khong
+  steps:
+  - intent: ask_hoc_phan_A_co_bat_buoc_khong
+  - action: action_modules_type
+
+- rule: Reply action_modules_type anytime the user ask_ten_hoc_phan
+  steps:
+  - intent: ask_ten_hoc_phan
+  - action: action_modules_name
+
+- rule: ask_hoc_phan_A_co_bat_buoc_khong Reply action_modules_type
+  steps:
+  - intent: ask_hoc_phan_A_co_bat_buoc_khong
+  - action: action_modules_type
+
+- rule: Reply action_modules_type anytime the user ask_dinh_nghia_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_dinh_nghia_ke_hoach_hoc_tap
+  - action: utter_ask_dinh_nghia_ke_hoach_hoc_tap
+
+- rule: Reply utter_ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap anytime the user ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  - action: utter_ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+
+- rule: Reply utter_ask_quy_trinh_quan_ly_ke_hoach_hoc_tap anytime the user ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  - action: utter_ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+
+- rule: Reply utter_ask_cap_nhat_hoc_phan_phai_hoc anytime the user ask_cap_nhat_hoc_phan_phai_hoc
+  steps:
+  - intent: ask_cap_nhat_hoc_phan_phai_hoc
+  - action: utter_ask_cap_nhat_hoc_phan_phai_hoc
+
+- rule: Reply utter_ask_cap_nhat_nam_hoc_hoc_ky anytime the user ask_cap_nhat_nam_hoc_hoc_ky
+  steps:
+  - intent: ask_cap_nhat_nam_hoc_hoc_ky
+  - action: utter_ask_cap_nhat_nam_hoc_hoc_ky
+
+- rule: Reply utter_ask_xem_KHTT_toan_khoa anytime the user ask_xem_KHTT_toan_khoa
+  steps:
+  - intent: ask_xem_KHTT_toan_khoa
+  - action: utter_ask_xem_KHTT_toan_khoa
+
+- rule: Reply utter_ask_chuong_trinh_dao_tao anytime the user ask_chuong_trinh_dao_tao
+  steps:
+  - intent: ask_chuong_trinh_dao_tao
+  - action: utter_ask_chuong_trinh_dao_tao
+
+- rule: Reply utter_ask_chuong_trinh_dao_tao anytime the user ask_tin_chi
+  steps:
+  - intent: ask_tin_chi
+  - action: utter_ask_tin_chi
+
+- rule: Reply utter_ask_tich_luy anytime the user ask_tich_luy
+  steps:
+  - intent: ask_tich_luy
+  - action: utter_ask_tich_luy
+
+- rule: Reply utter_ask_lap_ke_hoach_hoc_tap_o_dau anytime the user ask_lap_ke_hoach_hoc_tap_o_dau
+  steps:
+  - intent: ask_lap_ke_hoach_hoc_tap_o_dau
+  - action: utter_ask_lap_ke_hoach_hoc_tap_o_dau
+
+- rule: Reply utter_ask_dang_ky_hoc_phan anytime the user ask_dang_ky_hoc_phan
+  steps:
+  - intent: ask_dang_ky_hoc_phan
+  - action: utter_ask_dang_ky_hoc_phan
+
+- rule: Reply utter_ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao anytime the user ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  steps:
+  - intent: ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  - action: utter_ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+
+- rule: Reply utter_ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao anytime the user ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  steps:
+  - intent: ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  - action: utter_ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+
+- rule: Reply utter_ask_hoc_phan_cai_thien_la_gi anytime the user ask_hoc_phan_cai_thien_la_gi
+  steps:
+  - intent: ask_hoc_phan_cai_thien_la_gi
+  - action: utter_ask_hoc_phan_cai_thien_la_gi
+
+- rule: Reply utter_ask_them_hoc_phan_cai_thien_nhu_the_nao anytime the user ask_them_hoc_phan_cai_thien_nhu_the_nao
+  steps:
+  - intent: ask_them_hoc_phan_cai_thien_nhu_the_nao
+  - action: utter_ask_them_hoc_phan_cai_thien_nhu_the_nao
+
+- rule: Reply utter_ask_hoc_phan_tien_quyet anytime the user ask_hoc_phan_tien_quyet
+  steps:
+  - intent: ask_hoc_phan_tien_quyet
+  - action: utter_ask_hoc_phan_tien_quyet
+
+- rule: Reply utter_ask_hoc_phan_bat_buoc anytime the user ask_hoc_phan_bat_buoc
+  steps:
+  - intent: ask_hoc_phan_bat_buoc
+  - action: utter_ask_hoc_phan_bat_buoc
+
+- rule: Reply utter_ask_hoc_phan_tu_chon anytime the user ask_hoc_phan_tu_chon
+  steps:
+  - intent: ask_hoc_phan_tu_chon
+  - action: utter_ask_hoc_phan_tu_chon
+
+- rule: Reply action_modules_code anytime the user ask_ma_hoc_phan
+  steps:
+  - intent: ask_ma_hoc_phan
+  - action: action_modules_code

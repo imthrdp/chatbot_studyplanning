@@ -1,0 +1,217 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thanks_bot
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_ability
+  - praise
+  - ask_dinh_nghia_ke_hoach_hoc_tap
+  - ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  - ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  - ask_cap_nhat_hoc_phan_tich_luy
+  - ask_cap_nhat_hoc_phan_phai_hoc
+  - ask_cap_nhat_nam_hoc_hoc_ky
+  - ask_xem_KHTT_toan_khoa
+  - ask_hoc_phan_tien_quyet
+  - ask_hoc_phan_song_hanh
+  - ask_hoc_phan_bat_buoc
+  - ask_hoc_phan_tu_chon
+  - ask_chuong_trinh_dao_tao
+  - ask_tin_chi
+  - ask_tich_luy
+  - ask_lap_ke_hoach_hoc_tap_o_dau
+  - ask_dang_ky_hoc_phan
+  - ask_tai_sao_phai_dang_ky_hoc_phan
+  - ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  - ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+  - ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  - ask_hoc_phan_cai_thien_la_gi
+  - ask_them_hoc_phan_cai_thien_nhu_the_nao
+  - ask_hoc_phan_tien_quyet_B_cua_mon_A
+  - ask_hoc_phan_A_co_bat_buoc_khong
+  - ask_ten_hoc_phan
+  - ask_ma_hoc_phan
+
+entities:
+ - modulesCode
+ - modulesName
+
+slots:
+  modulesCode:
+    type: text
+    influence_conversation: false
+
+actions:
+  - utter_greet
+  - utter_affirm
+  - utter_deny
+  - utter_mood_great
+  - utter_mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_praised
+  - utter_thanks_bot
+  - utter_iamabot
+  - utter_ask_ability
+  - utter_ask_dinh_nghia_ke_hoach_hoc_tap
+  - utter_ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  - utter_ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  - utter_ask_cap_nhat_hoc_phan_tich_luy
+  - utter_ask_cap_nhat_hoc_phan_phai_hoc
+  - utter_ask_cap_nhat_nam_hoc_hoc_ky
+  - utter_ask_xem_KHTT_toan_khoa
+  - utter_ask_chuong_trinh_dao_tao
+  - utter_ask_tin_chi
+  - utter_ask_tich_luy
+  - utter_ask_lap_ke_hoach_hoc_tap_o_dau
+  - utter_ask_dang_ky_hoc_phan
+  - utter_ask_tai_sao_phai_dang_ky_hoc_phan
+  - utter_ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  - utter_ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+  - utter_ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  - utter_ask_hoc_phan_cai_thien_la_gi
+  - utter_ask_them_hoc_phan_cai_thien_nhu_the_nao
+  - ask_hoc_phan_tien_quyet_B_cua_mon_A
+  - action_modules_prerequisite
+  - action_hello_world
+  - action_modules_name
+  - action_modules_type
+  - action_modules_code
+
+responses:
+  utter_greet:
+  - text: "Xin chào bạn"
+  - text: "Xin chào"
+
+  utter_affirm:
+    - text: "Vâng"
+
+  utter_deny:
+    - text: "Không được"
+
+  utter_mood_great:
+    - text: "Tôi rất hạnh phúc"
+    - text: "Tôi trong tâm trạng rất tốt"
+
+  utter_mood_unhappy:
+    - text: "Tôi đang không vui"
+    - text: "Tôi trong tâm trạng không tốt"
+
+  utter_cheer_up:
+  - text: "Đây là thứ có thể làm bạn cảm thấy tốt hơn:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Bạn cảm thấy tốt hơn chưa"
+  - text: "Bạn hài lòng chứ"
+
+  utter_happy:
+  - text: "Tuyệt vời!"
+  - text: "Ôi thật là vui quá đi"
+
+  utter_goodbye:
+  - text: "Goodbye"
+  - text: "Bye"
+  - text: "Tạm biệt bạn"
+  - text: "Tạm biệt nhé"
+  - text: "Xin chào tạm biệt, hẹn gặp lại bạn nhé"
+
+  utter_praised:
+  - text: "Cảm ơn bạn nhiều nhé"
+  - text: "Cảm ơn bạn, đây là công việc của tôi mà"
+
+  utter_thanks_bot:
+  - text: "Không có chi"
+  - text: "Đây là việc của tôi mà"
+
+  utter_iamabot:
+  - text: "Tôi là robot thuộc Rasa."
+  - text: "Em là người máy xinh đẹp (ahihi)"
+  - text: "Tôi là một chatbot được tạo ra để hỏi đáp về kế hoạch học tập của sinh viên Công nghệ Thông tin."
+  - text: "Bạn có thể gọi tôi là chatbot hỏi đáp về kế hoạch học tập của sinh viên Công nghệ Thông tin."
+
+  utter_ask_ability:
+  - text: "Tôi có thể giúp bạn trả lời những câu hỏi liên quan đến kế hoạch học tập, đăng ký học phần..."
+  - text: "Tôi có biết khá nhiều về kế hoạch học tập và việc đăng ký học phần của sinh viên công nghệ thông tin, bạn cần mình trợ giúp gì nhỉ"
+
+  utter_ask_dinh_nghia_ke_hoach_hoc_tap:
+  - text: "Kế hoạch học tập là lộ trình để đạt được mục tiêu giáo dục của cả giảng viên và sinh viên.\nGiúp sinh viên có được cái nhìn tổng quan về khung chương trình đào tạo của ngành học.\nĐồng thời giúp sinh viên dễ dàng nhìn lại quá trình học tập của mình, từ đó đề ra được phương hướng học tập phù hợp với mình."
+
+  utter_ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap:
+  - text: "Giúp sinh viên có được cái nhìn tổng quan về khung chương trình đào tạo của ngành học.\nĐồng thời giúp sinh viên dễ dàng nhìn lại quá trình học tập của mình, từ đó đề ra được phương hướng học tập phù hợp với mình."
+
+  utter_ask_quy_trinh_quan_ly_ke_hoach_hoc_tap:
+  - text: "Quy trình quản lý kế hoạch học tập được bắt đầu khi sinh viên tạo ra kế hoạch học tập.\nCán bộ cố vấn học tập xem xét kế hoạch học tập của sinh viên.\nNếu kế hoạch học tập của sinh viên tạo ra phù hợp và đáp ứng được khung chương trình đào tạo ngành, cán bộ cố vấn học tập sẽ ký duyệt kế hoạch học tập của sinh viên đồng thời khóa quyền cập nhật học phần của sinh viên.\nKế hoạch học tập đã được duyệt sẽ được sử dụng làm khung xét tốt nghiệp cho sinh viên sau này."
+
+  utter_ask_cap_nhat_hoc_phan_tich_luy:
+  - text: "Cho phép sinh viên thêm các học phần đã học vào kế hoạch học tập.\nSinh viên chỉ có thể thêm các học phần có điểm đạt hoặc học phần có miễn.\nNếu sinh viên không muốn tích lũy học phần thì có thể xóa học phần ra khỏi danh sách học phần tích lũy."
+
+  utter_ask_cap_nhat_hoc_phan_phai_hoc:
+  - text: "Cho phép sinh viên thêm các học phần chưa học vào kế hoạch học tập, nhằm xác định khung học tập của sinh viên trong các học kỳ tiếp theo."
+
+  utter_ask_cap_nhat_nam_hoc_hoc_ky:
+  - text: "Cho phép sinh viên thay đổi năm học - học kỳ học của các học phần phải học."
+  - text: "Giúp sinh viên điều chỉnh lại kế hoạch học tập năm học - học kỳ của mình cho phù hợp với thực tế"
+
+  utter_ask_xem_KHTT_toan_khoa:
+  - text: "Bạn có thể xem kế hoạch học tập toàn khóa tại địa chỉ sau: https://www.ctu.edu.vn/dao-tao/ctdt-dai-hoc.html"
+
+  utter_ask_chuong_trinh_dao_tao:
+  - text: "Bạn có thể xem chương trình đào tạo tại địa chỉ sau: https://www.ctu.edu.vn/dao-tao/ctdt-dai-hoc.html"
+
+  utter_ask_tin_chi:
+  - text: "Tín chỉ là đơn vị dùng để đo lường khối lượng học tập.\nMột tín chỉ được quy định bằng 15 tiết học lý thuyết, 30 tiết thực hành, thí nghiệm hoặc thảo luận, bằng 60 giờ thực tập tại cơ sở hoặc bằng 45 giờ làm tiểu luận, bài tập lớn, đồ án hoặc khoá luận tốt nghiệp.\nĐể tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị ngoài giờ lên lớp"
+  - text: "Tín chỉ là được coi là một đơn vị dùng để đo lường mức độ học tập của một hệ thống ECTS. 1 tín chỉ sẽ được quy định tương đương 15 tiết học lý thuyết, cùng 30 tiết thực hành và thí nghiệm hoặc là thảo luận, bằng đúng 60 giờ thực tập tại các cơ sở hoặc là bằng 45 giờ sinh viên làm tiểu luận, làm bài tập lớn, đồ án hoặc là khoá luận tốt nghiệp.\nĐiều này đồng nghĩa với việc sinh viên tiếp thu được một tín chỉ thì phải phải dành ít nhất là 30 giờ chuẩn bị ngoài giờ lên lớp"
+
+  utter_ask_tich_luy:
+  - text: "Điểm trung bình tích lũy của sinh viên được tính dựa trên các học phần sinh viên đã đưa vào danh sách học phần tích lũy"
+
+  utter_ask_lap_ke_hoach_hoc_tap_o_dau:
+  - text: "Bạn có thể lập kế hoạch học tập sau khi đăng nhập hệ thống quản lý của trường tại địa chỉ: https://htql.ctu.edu.vn/htql/login.php"
+
+  utter_ask_dang_ky_hoc_phan:
+  - text: "Bạn có thể đăng ký học phần địa chỉ: https://htql.ctu.edu.vn/htql/login.php trong thời gian quy định từng năm học - học kỳ"
+
+  utter_ask_tai_sao_phai_dang_ky_hoc_phan:
+  - text: "Để hệ thống quản lý kiểm soát không cho phép trùng kế hoạch học tập / thời khóa biểu, không cho vượt quá số tín chỉ quy định, xác định học phí và điều kiện ràng buộc giữa các học phần"
+
+  utter_ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao:
+  - text: "Bạn có thể cập nhật kế hoạch học tập sau khi đăng nhập hệ thống quản lý của trường tại địa chỉ: https://htql.ctu.edu.vn/htql/login.php trong thời gian quy định"
+
+  utter_ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi:
+  - text: "Học phần ngoài chương trình đào tạo là học phần không có trong chương trình đào tạo tuy nhiên bạn có thể đăng ký học nếu bạn thích"
+
+  utter_ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao:
+  - text: "Bạn đăng nhập hệ thống quản lý, vào mục Kế hoạch học tập / Cập nhật học phần phải học / Thêm học phần ngoài khung CTDT"
+    image: "https://dkmh.ctu.edu.vn/htql/sinhvien/huongdan/help_files/image019.jpg"
+
+  utter_ask_hoc_phan_cai_thien_la_gi:
+  - text: "Khi bạn chưa hài lòng về kết quả môn học nào đó, bạn đăng ký học để cải thiện kết quả.\nHọc phần đó được gọi là học phần cải thiện"
+
+  utter_ask_them_hoc_phan_cai_thien_nhu_the_nao:
+  - text: "Bạn đăng nhập hệ thống quản lý, vào mục Kế hoạch học tập / Cập nhật học phần phải học / Thêm học phần cải thiện điểm"
+    image: "https://dkmh.ctu.edu.vn/htql/sinhvien/huongdan/help_files/image019.jpg"
+
+  utter_ask_hoc_phan_tien_quyet:
+  - text: "Học phần tiên quyết của môn B là môn A, khi đó muốn học môn B ta phải tích lũy môn A."
+
+  utter_ask_hoc_phan_bat_buoc:
+  - text: "Học phần bắt buộc là học phần phải tích lũy để có thể xét tốt nghiệp"
+
+  utter_ask_hoc_phan_song_hanh:
+  - text: "Học phần song hành A và B là 2 học phần có thể học cùng một học kỳ"
+
+  utter_ask_hoc_phan_tu_chon:
+  - text: "Học phần tự chọn: sinh viên có thể lựa chọn môn mình thích để học, nhưng cần đảm bảo số tín chỉ yêu cầu"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

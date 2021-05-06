@@ -1,0 +1,203 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: hoi_ve_bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: hoi_ve_chuc_nang
+  steps:
+  - intent: ask_ability
+  - action: utter_ask_ability
+
+- story: khen_ngoi
+  steps:
+  - intent: praise
+  - action: utter_praised
+
+- story: ask_dinh_nghia_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_dinh_nghia_ke_hoach_hoc_tap
+  - action: utter_ask_dinh_nghia_ke_hoach_hoc_tap
+
+- story: ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+  - action: utter_ask_muc_dich_cua_viec_lap_ke_hoach_hoc_tap
+
+- story: ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  steps:
+  - intent: ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+  - action: utter_ask_quy_trinh_quan_ly_ke_hoach_hoc_tap
+
+- story: ask_cap_nhat_hoc_phan_tich_luy
+  steps:
+  - intent: ask_cap_nhat_hoc_phan_tich_luy
+  - action: utter_ask_cap_nhat_hoc_phan_tich_luy
+
+- story: ask_cap_nhat_hoc_phan_phai_hoc
+  steps:
+  - intent: ask_cap_nhat_hoc_phan_phai_hoc
+  - action: utter_ask_cap_nhat_hoc_phan_phai_hoc
+
+- story: ask_cap_nhat_nam_hoc_hoc_ky
+  steps:
+  - intent: ask_cap_nhat_nam_hoc_hoc_ky
+  - action: utter_ask_cap_nhat_nam_hoc_hoc_ky
+
+- story: ask_xem_KHTT_toan_khoa
+  steps:
+  - intent: ask_xem_KHTT_toan_khoa
+  - action: utter_ask_xem_KHTT_toan_khoa
+
+- story: ask_hoc_phan_tien_quyet
+  steps:
+  - intent: ask_hoc_phan_tien_quyet
+  - action: utter_ask_hoc_phan_tien_quyet
+
+- story: ask_hoc_phan_bat_buoc
+  steps:
+  - intent: ask_hoc_phan_bat_buoc
+  - action: utter_ask_hoc_phan_bat_buoc
+
+- story: ask_hoc_phan_tu_chon
+  steps:
+  - intent: ask_hoc_phan_tu_chon
+  - action: utter_ask_hoc_phan_tu_chon
+
+- story: ask_chuong_trinh_dao_tao
+  steps:
+  - intent: ask_chuong_trinh_dao_tao
+  - action: utter_ask_chuong_trinh_dao_tao
+
+- story: ask_tich_luy
+  steps:
+  - intent: ask_tich_luy
+  - action: utter_ask_tich_luy
+
+- story: ask_lap_ke_hoach_hoc_tap_o_dau
+  steps:
+  - intent: ask_lap_ke_hoach_hoc_tap_o_dau
+  - action: utter_ask_lap_ke_hoach_hoc_tap_o_dau
+
+- story: ask_tai_sao_phai_dang_ky_hoc_phan
+  steps:
+  - intent: ask_tai_sao_phai_dang_ky_hoc_phan
+  - action: utter_ask_tai_sao_phai_dang_ky_hoc_phan
+
+- story: ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  steps:
+  - intent: ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+  - action: utter_ask_cap_nhat_ke_hoach_hoc_tap_nhu_the_nao
+
+- story: ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+  steps:
+  - intent: ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+  - action: utter_ask_hoc_phan_ngoai_chuong_trinh_dao_tao_la_gi
+
+- story: ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  steps:
+  - intent: ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+  - action: utter_ask_them_hoc_phan_ngoai_chuong_trinh_dao_tao_nhu_the_nao
+
+- story: ask_hoc_phan_cai_thien_la_gi
+  steps:
+  - intent: ask_hoc_phan_cai_thien_la_gi
+  - action: utter_ask_hoc_phan_cai_thien_la_gi
+
+- story: ask_hoc_phan_song_hanh_la_gi
+  steps:
+  - intent: ask_hoc_phan_song_hanh
+  - action: utter_ask_hoc_phan_song_hanh
+
+- story: ask_tin_chi_la_gi
+  steps:
+  - intent: ask_tin_chi
+  - action: utter_ask_tin_chi
+
+- story: ask_dang_ky_hoc_phan
+  steps:
+  - intent: ask_dang_ky_hoc_phan
+  - action: utter_ask_dang_ky_hoc_phan
+
+- story: ask_them_hoc_phan_cai_thien_nhu_the_nao
+  steps:
+  - intent: ask_them_hoc_phan_cai_thien_nhu_the_nao
+  - action: utter_ask_them_hoc_phan_cai_thien_nhu_the_nao
+
+- story: ask_hoc_phan_A_co_bat_buoc_khong
+  steps:
+  - intent: ask_hoc_phan_A_co_bat_buoc_khong
+    entities:
+      - modulesCode: "CT175"
+      - modulesCode: "CT271"
+      - modulesCode: "ML001"
+      - modulesCode: "KL001"
+      - modulesCode: "TN012"
+      - modulesCode: "QP001"
+  - action: action_modules_type
+
+- story: hoi_ve_hoc_phan_tien_quyet
+  steps:
+  - intent: ask_hoc_phan_tien_quyet_B_cua_mon_A
+    entities:
+      - modulesCode: "CT175"
+      - modulesCode: "CT271"
+      - modulesCode: "ML001"
+      - modulesCode: "KL001"
+      - modulesCode: "TN012"
+      - modulesCode: "QP001"
+  - action: action_modules_prerequisite
+
+- story: hoi_ve_ten_hoc_phan
+  steps:
+  - intent: ask_ten_hoc_phan
+    entities:
+      - modulesCode: "CT175"
+      - modulesCode: "CT271"
+      - modulesCode: "ML001"
+      - modulesCode: "KL001"
+      - modulesCode: "TN012"
+      - modulesCode: "QP001"
+  - action: action_modules_name
+
+- story: hoi_ve_ma_hoc_phan
+  steps:
+  - intent: ask_ma_hoc_phan
+    entities:
+      - modulesCode: "CT175"
+      - modulesCode: "CT271"
+      - modulesCode: "ML001"
+      - modulesCode: "KL001"
+      - modulesCode: "TN012"
+      - modulesCode: "QP001"
+  - action: action_modules_code
